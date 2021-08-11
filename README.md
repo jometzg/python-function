@@ -2,6 +2,20 @@
 
 This is a basic Python Azure function that takes the file from the input and copies it to the output.
 
+
+```
+import logging
+
+import azure.functions as func
+
+
+def main(myblob: func.InputStream, outputBlob: func.Out[func.InputStream]):
+    logging.info(f"Python blob trigger function processed blob \n"
+                 f"Name: {myblob.name}\n"
+                 f"Blob Size: {myblob.length} bytes")
+    outputBlob.set(myblob)
+```
+
 The source and destination are defined in function.json
 
 ```
