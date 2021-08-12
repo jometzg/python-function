@@ -48,7 +48,7 @@ The connection **jjblobtriggerfuncstore_STORAGE** needs to be set in the configu
 ## Monitoring the function
 The function invocation can be checked in the invocation section of the actual function (as opposed to the function app itself).
 
-![alt text](azure-function-invocation.png "Function invocation")
+![alt text](azure-function-invocations.png "Function invocation")
 
 As can be see above, there are a number of invocations.
 
